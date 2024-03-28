@@ -52,3 +52,11 @@ def col_info(data, col_ids=None):
 
         if (total_length < 50) & (total_values < 12):
             print(values_list, "\n")
+
+
+def get_decade(starting_year, current_year, start_year, end_year):
+    display_start = starting_year if start_year == starting_year else start_year + 1
+    display_end = current_year if end_year > current_year else end_year
+
+    return display_start, display_end
+
